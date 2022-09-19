@@ -1,9 +1,8 @@
 <?php
     require_once("connection.php");
 ?>
-
 <!DOCTYPE html>
-<html >
+<html>
 <head>
     <meta charset = "UTF-8">
     <title> samp-rp </title>
@@ -13,6 +12,8 @@
 </head>
 <body>
     <div class = "container">
+   
+
         <p> Tutaj bedzie strona naszego gamemod'a </p>
 
     </div>
