@@ -12,16 +12,12 @@
 <body>
     <div class = "container">
         <div class ="main-box">
-            <form method="POST" action = "systems/login.php">
+            <form method="POST" action = "login.php">
                 <input type="text" value = "nick" name = "nick"><br>
                 <input type="password" value = "hasło" name = "password"><br>
                 <input type="submit" value = "zaloguj">
             </form>
         </div>
-        <?php 
-
-        echo "Dziala";
-        ?>
     </div>
 
 </body>
