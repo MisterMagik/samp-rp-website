@@ -1,5 +1,6 @@
 <?php 
 require_once "connection.php";
+session_start();
 $nick = $_POST['nick'];
 $password = $_POST['password'];
 
@@ -36,10 +37,16 @@ $password = $_POST['password'];
                 while($row = $result->fetch_assoc()) {
                   echo $row["AccName"];  
                   echo "<p> Jest konto! </p>";
+                  $_SESSION['logged'] = true;
+                  $_SESSION['nick'] = $nick;
+                  header('Location: index.php');
                 }
             }
             else {
                 echo "<p> Nie istniejace konto! </p>";
+                $_SESSION['logged'] = false;
+                header('Location: logowanie.php');
+
             }
               
 

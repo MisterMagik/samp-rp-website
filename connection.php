@@ -1,7 +1,7 @@
 <?php 
     $servername = "127.0.0.1";
     $username = "root";
-    $dbpassword = "****";
-    $databasename = "****";
+    $dbpassword = "root";
+    $databasename = "samp";
 
 ?>

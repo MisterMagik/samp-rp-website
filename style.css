@@ -25,7 +25,7 @@ body {
     
 }
 
-.register-block {
+.register-block, .account-block{
     float: left;
     height: 100px;
     width: 25%;
@@ -33,7 +33,7 @@ body {
     color: white;
 }
 
-.login-block {
+.login-block, .logout-block{
     float: left;
     height: 100px;
     width: 25%;

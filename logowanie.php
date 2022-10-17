@@ -1,5 +1,6 @@
 <?php
     require_once "connection.php";
+    session_start();
     $connect = new mysqli($servername, $username, $dbpassword, $databasename);
     if($connect->connect_errno) {
         echo $connect->connect_errno;
