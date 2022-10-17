@@ -32,11 +32,14 @@ $password = $_POST['password'];
             $result = $connection->query($sql);
            
             if($result->num_rows > 0) {
-                    
+                
                 while($row = $result->fetch_assoc()) {
                   echo $row["AccName"];  
                   echo "<p> Jest konto! </p>";
                 }
+            }
+            else {
+                echo "<p> Nie istniejace konto! </p>";
             }
               
 

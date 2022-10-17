@@ -1,5 +1,10 @@
 <?php
-    require_once("connection.php");
+    require_once "connection.php";
+    $connect = new mysqli($servername, $username, $password, $databasename);
+    if($connect->connect_errno) {
+        echo $connect->connect_errno;
+    }
+    
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,14 +15,29 @@
     
 </head>
 <body>
-    <div class = "container">
-        <div class ="main-box">
-            <form method="POST" action = "login.php">
-                <input type="text" value = "nick" name = "nick"><br>
-                <input type="password" value = "hasło" name = "password"><br>
-                <input type="submit" value = "zaloguj">
-            </form>
+    <div class = "up">
+        <div class = "logo">
+
         </div>
+
+        <div class = "homepage-block">
+
+        </div>
+
+        <div class = "register-block">
+
+        </div>
+        <div class = "login-block">
+
+        </div>
+        
+        
     </div>
+    <div class = "middle-block">
+
+    </div>
+    <footer>
+
+    </footer>
 
 </body>
