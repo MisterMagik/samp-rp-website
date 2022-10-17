@@ -1,9 +1,9 @@
 <?php
     require_once "connection.php";
     session_start();
-    $connect = new mysqli($servername, $username, $dbpassword, $databasename);
-    if($connect->connect_errno) {
-        echo $connect->connect_errno;
+    $connection = new mysqli($servername, $username, $dbpassword, $databasename);
+    if($connection->connect_errno) {
+        echo $connection->connect_errno;
     }
     
 ?>
@@ -49,10 +49,10 @@
                 <a href = "index.php"> Strona główna </a>
             </div>
     
-            <div class = "account-block">
+            <div class = "register-block">
                 <p> Witaj <a href = "panel.php">'.$_SESSION['nick'].'</a>
             </div>
-            <div class = "logout-block">
+            <div class = "login-block">
                 <a href = "logout.php"> Wyloguj się! </a>
             </div>
             
@@ -71,4 +71,4 @@
 
 </body>
 
-<?php $connect->close();  ?>
+<?php $connection->close();  ?>
