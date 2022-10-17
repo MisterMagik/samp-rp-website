@@ -35,7 +35,12 @@
     </div>
     <div class = "middle-block">
         <div class = "content-block">
-            <p> Strona projektu samp-rp (Old School RolePlay) </p>
+            <p> Logowanie </p>
+            <form method="POST" action = "login.php">
+                <input type="text" value = "nick" name = "nick"><br>
+                <input type="password" value = "hasło" name = "password"><br>
+                <input type="submit" value = "zaloguj">
+            </form>
         </div>
     </div>
     <footer>

@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(108, 113, 39);
+}
+
+.up {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(56, 56, 56);
+}
+
+.logo-block {
+    float: left;
+    height: 100px;
+    width: 25%;
+    text-align: left;
+    color: white;
+}
+
+.homepage-block {
+    float: left;
+    height: 100px;
+    width: 25%;
+    text-align: right;
+    color: white;
+    
+}
+
+.register-block {
+    float: left;
+    height: 100px;
+    width: 25%;
+    text-align: right;
+    color: white;
+}
+
+.login-block {
+    float: left;
+    height: 100px;
+    width: 25%;
+    text-align: right;
+    color: white;
+}
+
+.middle-block {
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-block {
+    background-color: antiquewhite;
+    color: black;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}  
+a {
+    color: white;
+    text-decoration: none;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}

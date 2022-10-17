@@ -35,7 +35,7 @@
     </div>
     <div class = "middle-block">
         <div class = "content-block">
-            <p> Strona projektu samp-rp (Old School RolePlay) </p>
+            <p> Rejestracja </p>
         </div>
     </div>
     <footer>
