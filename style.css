@@ -52,6 +52,11 @@ body {
     color: black;
 }
 
+.low-block {
+    background-color: antiquewhite;
+    color: black;
+}
+
 footer {
     height: 100px;
     width: 100%;

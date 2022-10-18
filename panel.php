@@ -64,7 +64,7 @@
         <div class = "content-block">
             <?php
             $nick = $_SESSION['nick'];
-            $sql = "SELECT CharName FROM players WHERE AccName = '$nick'";
+            $sql = "SELECT GUID, CharId, CharName FROM players WHERE AccName = '$nick'";
             $result = $connection->query($sql);
            
            
@@ -72,7 +72,7 @@
             if($result->num_rows > 0) {
                 echo "<p> Twoje postacie: </p>";
                 while($row = $result->fetch_assoc()) {
-                  echo $row["CharName"]."<br>";  
+                  echo "[Guid:".$row['GUID']."- CharId:".$row['CharId']."]".$row["CharName"]."<br>";  
                 }
             }
             else {
