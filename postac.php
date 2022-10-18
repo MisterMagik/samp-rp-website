@@ -67,7 +67,7 @@
             $sql = "SELECT GUID, CharId, CharName FROM players WHERE AccName = '$nick'";
             $result = $connection->query($sql);
             $count = 0;
-            $ident = 0;
+           
            
             if($result->num_rows > 0) {
                 echo "<p style= 'text-align: center; font-size: 26px;'> Twoje postacie: </p>";
@@ -77,17 +77,16 @@
                         echo "<br>";
                     }
                     $count++;
-                    $ident++;
                     if(strlen($row['CharName']) < 11) {
-                    echo "<a href='postac.php' style = 'color: black;' name =".$ident."onclick='selectCharacter();'><div class = 'card-block'><br><img src='' alt='postac' style='text-align: center'><br>"."[Guid:".$row['GUID']."- CharId:".$row['CharId']."]".$row["CharName"]."<br>";  
+                    echo "<a href='postac.php' style = 'color: black;'><div class = 'card-block'><br><img src='' alt='postac' style='text-align: center'><br>"."[Guid:".$row['GUID']."- CharId:".$row['CharId']."]".$row["CharName"]."<br>";  
                     }
                     else {
-                        echo "<a href='postac.php' style = 'color: black;' name =".$ident."onclick='selectCharacter();'><div class = 'card-block' style = 'width: 250px'><br><img src='' alt='postac' style='text-align: center'>"."[Guid:".$row['GUID']."- CharId:".$row['CharId']."]".$row["CharName"]."<br>";  
+                        echo "<a href='postac.php' style = 'color: black;'><div class = 'card-block' style = 'width: 250px'><br><img src='' alt='postac' style='text-align: center'>"."[Guid:".$row['GUID']."- CharId:".$row['CharId']."]".$row["CharName"]."<br>";  
                     }
                     echo "</div></a>";
                 }
             }
-            else if($result->num_rows = 0) {
+            else {
                 echo "<p> Nie posiadasz postaci </p>";
             }
             ?>
